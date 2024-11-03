@@ -3,7 +3,7 @@ import { FaSpinner } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc"
 import { IoMdEye, IoMdEyeOff } from "react-icons/io";
 import { Link } from "react-router-dom"
-import pic from "../../../public/hero2.jfif"
+import pic from "../../../public/signup.jpg"
 import { MdEmail, MdPassword } from "react-icons/md";
 
 
@@ -11,7 +11,7 @@ const Signup = () => {
     const [show, setShow] = useState(true);
     const [loading, setLoading] = useState(false);
   return (
-    <main className="w-full h-screen flex justify-center items-center  bg-[radial-gradient(#000,#9560EB)] ">
+    <main className="w-full h-screen flex justify-center items-center   bg-black bg-gradient-to-b from-[#141B26] to-black ">
         <div className="w-full lg:w-[50%] h-full  flex justify-center items-center p-2 ">
 
             <form action="" className="flex absolute  justify-center items-center flex-col w-full md:w-[400px] min-h-[400px] border rounded-md p-2 ">
@@ -65,7 +65,7 @@ const Signup = () => {
                 </div>
                  </div>
 
-                 <button type="submit" className=" py-6 border rounded-md h-[30px] flex justify-center items-center text-white font-semibold hover:bg-purple-600 ">
+                 <button type="submit" className=" py-6 border rounded-md h-[30px] flex justify-center items-center text-white font-semibold hover:bg-[#141B26] ">
                 {loading ? <FaSpinner /> : "Sign Up"}
               </button>
               </div>
